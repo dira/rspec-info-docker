@@ -10,8 +10,8 @@ Can be used for other projects that need middleman and imagemagick, as well.
 1. From the project folder:
 
     >  docker run -it rspec.info
-      /var/app # bundle install
-      /var/app # middleman build
+    /var/app # bundle install
+    /var/app # middleman build
 
 1. Run the server
 
