@@ -12,7 +12,7 @@ RUN apk update && apk add --no-cache \
   tzdata 
 
 WORKDIR /var/app
-ADD . /var/app
+COPY . /var/app
 
 RUN gem install bundler
 RUN bundle install
