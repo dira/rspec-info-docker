@@ -14,10 +14,9 @@ RUN apk update && apk add --no-cache \
 WORKDIR /var/app
 COPY . /var/app
 
-RUN gem install bundler
-RUN bundle install
-
-RUN middleman build
+RUN gem install \
+  bundler \
+  middleman
 
 EXPOSE 4567
 

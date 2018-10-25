@@ -6,12 +6,13 @@ Can be used for other projects that need middleman and imagemagick, as well.
 
 # Usage
 
-1. Save Dockerfile in a folder
-2. Get the source of the projec in another folder.
-3. From that folder, build the image
+1. Get the image and tag it "rspec.info"
+1. From the project folder:
 
-    >  docker build -f <path_to_docker_file>  -t rspec.info .
+    >  docker run -it rspec.info
+      /var/app # bundle install
+      /var/app # middleman build
 
-4. Run the server
+1. Run the server
 
     > docker run -it -p 4567:4567 rspec.info middleman server
